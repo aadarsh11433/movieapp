@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <span>
+                Home
+            </span> 
+            <span onclick="signuppagefun()">
+               Signup
+            </span> 
+            <span onclick="loginpagefun()">
+                Login
+            </span>
+
+        </div>
+
+        <div id="slideshow">
+            <!--Show Slideshow here-->
+           
+
+        </div>
+
+        <div id="sort-buttons">
+
+            <!--Add sorting here-->
+
+            <select id="sortbyname" onchange="namesort()">
+                <option value="--">Sort by Name</option>
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
+            </select>
+
+            <select id="sortbyrating" onchange="ratesort()">
+                <option value="--">Sort by rating</option>
+                <option value="htl">High to low</option>
+                <option value="lth">Low to high</option>
+            </select>
+
+            <select id="sortbyrelease" onchange="releasesort()">
+                <option value="--">Sort by Release</option>
+                <option value="latest">Latest</option>
+                <option value="oldest">older</option>
+            </select>
+
+            <select id="fiterwood" onchange ="woodfilter()">
+                <option value="--">Filter by Wood</option>
+                <option value="boll">bollywood</option>
+                <option value="holl">Hollywood</option>
+            </select>
+        </div>
+        <div id="movies">
+            <!--Show list of movies here-->
+        </div>
+    </body>
+
+</html>
+
+<script src="/scripts/index.js"></script>
